@@ -1,0 +1,63 @@
+.contact {
+  font-size: 1.0rem;
+  //font-family: 'Lusitana', serif;
+  font-family: 'Times New Roman';
+  position:absolute;
+  width:100%;
+  bottom:0;
+  right:0;
+  text-align:right;
+  background-color:#469;
+  margin: 0;
+}
+
+.contact-container {
+  height:130px;
+  position:relative;
+}
+
+.fancy-font-container {
+  height:80px;
+  position:relative;
+}
+
+.fancy-font {
+  font-family: 'Pinyon Script', cursive;
+  font-size:2.0rem;
+  letter-spacing: 0.1rem;
+  margin-bottom:0px;
+  margin-top:0px;
+  position:absolute;
+  width:100%;
+  bottom:0;
+}
+
+.header-left {
+  float:left;
+  background-color:#444;
+  width:65%;
+}
+
+.header-right {
+  float:right;
+  position:relative;
+  width:30%
+}
+
+.maldonado-title {
+  font-size: 3.3rem;
+  line-height: 0.85em;
+  //font-family: 'Lusitana', serif;
+  font-family: 'Times New Roman';
+  background-color:#aaa;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  margin-top:0em;
+  margin-bottom:0em;
+}
+
+.maldonado-title-container {
+  height:50px;
+  position:relative;
+}
