@@ -96,6 +96,17 @@ $background-blue: #469;
   height: 1px;
 }
 
+.marble-header {
+  width:100%;
+  height:70px;
+  position:relative;
+}
+
+.marble-header-img {
+  width:100%;
+  height:70px;
+}
+
 .menu-icon {
   float:left;
   display:inline-block;
@@ -140,6 +151,65 @@ $background-blue: #469;
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
+.small-link-container {
+  float:left;
+  width:25%;
+  height:75px;
+  //background-color:#aaa;
+  position:relative;
+}
+
+.small-link {
+  font-weight:normal;
+  display:inline-block;
+  font-family: Times, serif;
+  line-height:1.2rem;
+  font-size:1.2rem;
+  text-align:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:0;
+  margin-right:-50%;
+  transform: translate(-50%, -50%);
+  //background-color:#ddd;
+}
+
+.small-maldonado-title-container {
+  height:90px;
+  position:relative;
+}
+
+.small-maldonado-title {
+  font-family: Times, serif;
+  font-size:2.5rem;
+  letter-spacing: 0.1rem;
+  position:absolute;
+  top:0%;
+  left:50%;
+  margin:0;
+  margin-right:-50%;
+  transform: translate(-50%, 25%);
+}
+
+.small-office-title-container {
+  height:75px;
+  position:relative;
+  //background-color:#daa;
+}
+
+.small-office-title {
+  font-family: 'Pinyon Script', cursive;
+  font-size:2.0rem;
+  letter-spacing: 0.1rem;
+  position:absolute;
+  bottom:0%;
+  left:50%;
+  margin:0;
+  margin-right:-50%;
+  transform: translate(-50%, 0%);
+}
+
 .spanish {
   font-size:1.2rem;
   font-family: Times, serif;
@@ -151,8 +221,31 @@ $background-blue: #469;
   margin-bottom:2px;
 }
 
+.state-emblem {
+  position:absolute;
+  height:70px;
+  top:50%;
+  left:50%;
+  margin:0;
+  margin-right:-50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 576px) {
+  .x-small {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .medium {
     display: block;
+  }
+
+  .small {
+    display: none;
   }
 }
