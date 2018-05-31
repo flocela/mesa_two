@@ -25,11 +25,35 @@ $background-blue: #469;
 .dropdown {
   width: 110px;
   text-align:center;
-  margin:auto
+  margin:0px auto 5px auto;
+
+}
+
+.dropdown-content {
+  clear:both;
 }
 
 .dropdown-container {
   margin-top:5px;
+}
+
+.header-link {
+  text-align:center;
+  border-top: 1px solid $dark-blue;
+  margin:0 auto 0 auto;
+  padding: 10px;
+  font-size:1.2rem;
+  font-family: Times, serif;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+  line-height:2.25rem;
+  font-weight:normal;
+  width:65%;
+}
+
+.header-link__last {
+  border-bottom: 1px solid $dark-blue;
+  margin-bottom: 5px;
 }
 
 .fancy-font-container {
@@ -86,6 +110,7 @@ $background-blue: #469;
   line-height:2.25rem;
   font-size:1.2rem;
   text-align:center;
+  font-weight: bold;
 }
 
 .maldonado-title {

@@ -12,7 +12,18 @@
         Menu
       </section>
       <section class="menu-icon">
-        <i class="material-icons md-36">keyboard_arrow_down</i>
+        <i class="material-icons md-36" (click) = "showMenu()">keyboard_arrow_down</i>
+      </section>
+    </section>
+    <section [ngClass]="{'transition':showingMenu}" [hidden]="!showingMenu" class="dropdown-content">
+      <section>
+        <h1 class="header-link">DWI/Criminal</h1>
+      </section>
+      <section>
+        <h1 class="header-link">Immigration</h1>
+      </section>
+      <section>
+        <h1 class="header-link header-link__last">Contact/Directions</h1>
       </section>
     </section>
   </section>
