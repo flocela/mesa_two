@@ -58,47 +58,6 @@ $navigation-color:#666;
   height: 1px;
 }
 
-.marble-header {
-  width:100%;
-  height:70px;
-  position:relative;
-}
-
-.marble-image {
-  position:absolute;
-  height:70px;
-  width:100%;
-  top:0;
-  left:0;
-  margin:0;
-  margin-right:0;
-  transform: translate(0, 0);
-}
-
-.medium-links-container {
-  background-color:$dark-blue;
-  width:100%;
-  height:30px;
-}
-
-.medium-link {
-  margin:0;
-  float:left;
-  font-family: Times, serif;
-  font-size:1.0rem;
-  width:25%;
-}
-
-.state-emblem {
-  position:absolute;
-  height:70px;
-  top:50%;
-  left:50%;
-  margin:0;
-  margin-right:-50%;
-  transform: translate(-50%, -50%);
-}
-
 .menu-icon {
   float:left;
   display:inline-block;
@@ -116,26 +75,9 @@ $navigation-color:#666;
   font-weight: bold;
 }
 
-.maldonado-title {
-  font-size: 3.3rem;
-  line-height: 0.85em;
-  //font-family: 'Lusitana', serif;
-  font-family: 'Times New Roman';
-  background-color:#aaa;
-  position:absolute;
-  width:100%;
-  bottom:0;
-  margin-top:0em;
-  margin-bottom:0em;
-}
-
 .maldonado-title-container {
   height:50px;
   position:relative;
-}
-
-.medium {
-  display: none;
 }
 
 .material-icons.md-18 { font-size: 18px; }
@@ -143,95 +85,19 @@ $navigation-color:#666;
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-.medium-contacts-container {
-  display:inline-block;
-  float:right;
-  padding-top:15px;
-  width:24%;
-  text-align:right;
-  font-family: Times, serif;
-  font-size:1.0rem;
-  line-height: 1.3rem;
+.medium {
+  display: none;
 }
-
-.medium-office-maldonado-title {
-  font-family: Times, serif;
-  font-size:2.5rem;
-  letter-spacing: 0.1rem;
-  line-height:2.3rem;
-}
-
-.medium-office-title-container {
-  width:74%;
-  display:inline-block;
-  height:95px;
-}
-
-.medium-office-title {
-  font-family: 'Pinyon Script', cursive;
-  font-size:2.0rem;
-  letter-spacing: 0.1rem;
-}
-
-.medium-page-links {
-  height:3.0rem;
-  background-color:$navigation-color;
-  width:100%;
-}
-
-.medium-page-link {
-  font-family: Times, serif;
-  font-size:1.2rem;
-  float:left;
-  width:20%;
-  text-align:center;
-  line-height:1.2rem;
-  padding-top:.4rem;
-}
-
-.medium-page-link-vert {
-  font-family: Times, serif;
-  font-size:1.2rem;
-  float:left;
-  width:20%;
-  text-align:center;
-  padding-top:.74rem;
-}
-
 
 .small {
   display:none;
 }
 
-.small-link-container {
-  float:left;
-  width:25%;
-  height:75px;
-  //background-color:#aaa;
-  position:relative;
-}
-
-.small-link {
-  font-weight:normal;
-  display:inline-block;
-  font-family: Times, serif;
-  line-height:1.2rem;
-  font-size:1.2rem;
-  text-align:center;
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin:0;
-  margin-right:-50%;
-  transform: translate(-50%, -50%);
-  //background-color:#ddd;
-}
-
-.small-maldonado-title-container {
+.maldonado-title-container {
   height:102px;
 }
 
-.small-maldonado-title {
+.maldonado-title {
   font-family: Times, serif;
   font-size:2.5rem;
   letter-spacing: 0.1rem;
@@ -241,13 +107,13 @@ $navigation-color:#666;
   margin:16px 0 0 0;
 }
 
-.small-office-title-container {
+.office-title-container {
   height:65px;
   position:relative;
   //background-color:#daa;
 }
 
-.small-office-title {
+.office-title {
   font-family: 'Pinyon Script', cursive;
   font-size:2.0rem;
   letter-spacing: 0.1rem;
@@ -272,22 +138,22 @@ $navigation-color:#666;
 
 
 @media (min-width: 387px) {
-  .small-maldonado-title-container {
+  .maldonado-title-container {
     height:80px;
   }
 
-  .small-maldonado-title {
+  .maldonado-title {
     font-size:2.5rem;
     letter-spacing: 0.1rem;
     height:80px;
   }
 
-  .small-office-title {
+  .office-title {
     font-size:2.0rem;
     letter-spacing: 0.1rem;
   }
 
-  .small-office-title-container {
+  .office-title-container {
     height:75px;
   }
 }
@@ -299,13 +165,116 @@ $navigation-color:#666;
   .small {
     display: block;
   }
+  .marble-header {
+    width:100%;
+    height:70px;
+    position:relative;
+  }
+
+  .marble-image {
+    position:absolute;
+    height:70px;
+    width:100%;
+    top:0;
+    left:0;
+    margin:0;
+    margin-right:0;
+    transform: translate(0, 0);
+  }
+
+  .small-link-container {
+    float:left;
+    width:25%;
+    height:75px;
+    //background-color:#aaa;
+    position:relative;
+  }
+
+  .small-link {
+    font-weight:normal;
+    display:inline-block;
+    font-family: Times, serif;
+    line-height:1.2rem;
+    font-size:1.2rem;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:0;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+    //background-color:#ddd;
+  }
+
+  .state-emblem {
+    position:absolute;
+    height:70px;
+    top:50%;
+    left:50%;
+    margin:0;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (min-width: 768px) {
   .medium {
     display: block;
   }
+  .medium-contacts-container {
+    display:inline-block;
+    float:right;
+    padding-top:15px;
+    width:24%;
+    text-align:right;
+    font-family: Times, serif;
+    font-size:1.0rem;
+    line-height: 1.3rem;
+  }
 
+  .medium-office-maldonado-title {
+    font-family: Times, serif;
+    font-size:2.5rem;
+    letter-spacing: 0.1rem;
+    line-height:2.3rem;
+  }
+
+  .medium-office-title-container {
+    width:74%;
+    display:inline-block;
+    height:95px;
+  }
+
+  .medium-office-title {
+    font-family: 'Pinyon Script', cursive;
+    font-size:2.0rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .medium-page-links {
+    height:3.0rem;
+    background-color:$navigation-color;
+    width:100%;
+  }
+
+  .medium-page-link {
+    font-family: Times, serif;
+    font-size:1.2rem;
+    float:left;
+    width:20%;
+    text-align:center;
+    line-height:1.2rem;
+    padding-top:.4rem;
+  }
+
+  .medium-page-link-vert {
+    font-family: Times, serif;
+    font-size:1.2rem;
+    float:left;
+    width:20%;
+    text-align:center;
+    padding-top:.74rem;
+  }
 
   .small {
     display: none;
