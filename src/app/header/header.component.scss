@@ -1,25 +1,9 @@
 $dark-blue: #26313e;
 $background-blue: #469;
-.contact {
-  font-size: 1.0rem;
-  //font-family: 'Lusitana', serif;
-  font-family: 'Times New Roman';
-  position:absolute;
-  width:100%;
-  bottom:0;
-  right:0;
-  text-align:right;
-  background-color:$background-blue;
-  margin: 0;
-}
+$navigation-color:#666;
 
 .clear-fix {
   clear: both;
-}
-
-.contact-container {
-  height:130px;
-  position:relative;
 }
 
 .dropdown {
@@ -35,6 +19,12 @@ $background-blue: #469;
 
 .dropdown-container {
   margin-top:5px;
+}
+
+.facebook {
+  height:18px;
+  width:18px;
+  margin-right:5px;
 }
 
 .header-link {
@@ -56,34 +46,6 @@ $background-blue: #469;
   margin-bottom: 5px;
 }
 
-.fancy-font-container {
-  height:80px;
-  position:relative;
-}
-
-.fancy-font {
-  font-family: 'Pinyon Script', cursive;
-  font-size:2.0rem;
-  letter-spacing: 0.1rem;
-  margin-bottom:0px;
-  margin-top:0px;
-  position:absolute;
-  width:100%;
-  bottom:0;
-}
-
-.header-left {
-  float:left;
-  background-color:#444;
-  width:65%;
-}
-
-.header-right {
-  float:right;
-  position:relative;
-  width:30%
-}
-
 .line-2px {
   background-color:$dark-blue;
   width: 100%;
@@ -102,9 +64,39 @@ $background-blue: #469;
   position:relative;
 }
 
-.marble-header-img {
-  width:100%;
+.marble-image {
+  position:absolute;
   height:70px;
+  width:100%;
+  top:0;
+  left:0;
+  margin:0;
+  margin-right:0;
+  transform: translate(0, 0);
+}
+
+.medium-links-container {
+  background-color:$dark-blue;
+  width:100%;
+  height:30px;
+}
+
+.medium-link {
+  margin:0;
+  float:left;
+  font-family: Times, serif;
+  font-size:1.0rem;
+  width:25%;
+}
+
+.state-emblem {
+  position:absolute;
+  height:70px;
+  top:50%;
+  left:50%;
+  margin:0;
+  margin-right:-50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu-icon {
@@ -151,6 +143,66 @@ $background-blue: #469;
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
+.medium-contacts-container {
+  display:inline-block;
+  float:right;
+  padding-top:15px;
+  width:24%;
+  text-align:right;
+  font-family: Times, serif;
+  font-size:1.0rem;
+  line-height: 1.3rem;
+}
+
+.medium-office-maldonado-title {
+  font-family: Times, serif;
+  font-size:2.5rem;
+  letter-spacing: 0.1rem;
+  line-height:2.3rem;
+}
+
+.medium-office-title-container {
+  width:74%;
+  display:inline-block;
+  height:95px;
+}
+
+.medium-office-title {
+  font-family: 'Pinyon Script', cursive;
+  font-size:2.0rem;
+  letter-spacing: 0.1rem;
+}
+
+.medium-page-links {
+  height:3.0rem;
+  background-color:$navigation-color;
+  width:100%;
+}
+
+.medium-page-link {
+  font-family: Times, serif;
+  font-size:1.2rem;
+  float:left;
+  width:20%;
+  text-align:center;
+  line-height:1.2rem;
+  padding-top:.4rem;
+}
+
+.medium-page-link-vert {
+  font-family: Times, serif;
+  font-size:1.2rem;
+  float:left;
+  width:20%;
+  text-align:center;
+  padding-top:.74rem;
+}
+
+
+.small {
+  display:none;
+}
+
 .small-link-container {
   float:left;
   width:25%;
@@ -176,24 +228,21 @@ $background-blue: #469;
 }
 
 .small-maldonado-title-container {
-  height:90px;
-  position:relative;
+  height:102px;
 }
 
 .small-maldonado-title {
   font-family: Times, serif;
   font-size:2.5rem;
   letter-spacing: 0.1rem;
-  position:absolute;
-  top:0%;
-  left:50%;
-  margin:0;
-  margin-right:-50%;
-  transform: translate(-50%, 25%);
+  line-height:2.3rem;
+  height:102px;
+  text-align:center;
+  margin:16px 0 0 0;
 }
 
 .small-office-title-container {
-  height:75px;
+  height:65px;
   position:relative;
   //background-color:#daa;
 }
@@ -221,14 +270,26 @@ $background-blue: #469;
   margin-bottom:2px;
 }
 
-.state-emblem {
-  position:absolute;
-  height:70px;
-  top:50%;
-  left:50%;
-  margin:0;
-  margin-right:-50%;
-  transform: translate(-50%, -50%);
+
+@media (min-width: 387px) {
+  .small-maldonado-title-container {
+    height:80px;
+  }
+
+  .small-maldonado-title {
+    font-size:2.5rem;
+    letter-spacing: 0.1rem;
+    height:80px;
+  }
+
+  .small-office-title {
+    font-size:2.0rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .small-office-title-container {
+    height:75px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -244,6 +305,7 @@ $background-blue: #469;
   .medium {
     display: block;
   }
+
 
   .small {
     display: none;
