@@ -138,6 +138,14 @@ $navigation-color:#666;
 
 
 @media (min-width: 387px) {
+  .small {
+    display: block;
+  }
+
+  .medium {
+    display:none;
+  }
+
   .maldonado-title-container {
     height:80px;
   }
@@ -164,6 +172,10 @@ $navigation-color:#666;
   }
   .small {
     display: block;
+  }
+
+  .medium {
+    display:none;
   }
   .marble-header {
     width:100%;
@@ -218,6 +230,14 @@ $navigation-color:#666;
 }
 
 @media (min-width: 768px) {
+  .x-small {
+    display: none;
+  }
+
+  .small {
+    display: none;
+  }
+
   .medium {
     display: block;
   }

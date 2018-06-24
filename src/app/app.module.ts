@@ -7,9 +7,10 @@ import {DWIComponent} from './dwi/dwi.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: 'dwi', component: DWIComponent, pathMatch: 'full'},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     DWIComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot((
