@@ -46,20 +46,14 @@ $navigation-color:#666;
 
 @media (min-width: 768px) {
   .billboard-container {
-    margin:5px 0px 0px 0px;
     display:block;
-    max-width:976px;
     width:100%;
+    background-image: url("./../../assets/texas-dome-outside-3.jpg");
     height:277px;
-    position:relative;
-    overflow:hidden
-  }
-
-  .billboard-photo {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    margin-top:5px;
   }
 
   .line-5px {
