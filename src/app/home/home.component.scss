@@ -1,10 +1,15 @@
 $dark-blue: #26313e;
-$background-blue: #469;
+$background-blue: #929da1;
 $navigation-color:#666;
 
 .billboard-container {
   display:none;
 }
+
+.clearfix {
+  clear:both;
+}
+
 .intro-container {
   margin:20px 0px 0px 10px;
   max-width:966px;
@@ -32,6 +37,12 @@ $navigation-color:#666;
 
 .line-5px {
   display:none;
+}
+
+.wrapper {
+  width:100%;
+  max-width:976px;
+  margin:0 auto;
 }
 
 @media (min-width: 576px) {
