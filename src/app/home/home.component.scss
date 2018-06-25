@@ -11,8 +11,9 @@ $navigation-color:#666;
 }
 
 .intro-container {
-  margin:20px 0px 0px 10px;
-  max-width:966px;
+  margin:0px 0px 0px 0px;
+  padding:20px 15px 0px 15px;
+  max-width:976px;
   clear:both;
 }
 
@@ -39,7 +40,7 @@ $navigation-color:#666;
   display:none;
 }
 
-.wrapper {
+.page-wrapper {
   width:100%;
   max-width:976px;
   margin:0 auto;
@@ -70,6 +71,13 @@ $navigation-color:#666;
     margin-top:5px;
   }
 
+  .intro-container {
+    margin:0px 0px 0px 0px;
+    padding:20px 5px 0px 5px;
+    max-width:976px;
+    clear:both;
+  }
+
   .line-5px {
     display:block;
     max-width:976px;
@@ -78,5 +86,32 @@ $navigation-color:#666;
     height:5px;
     margin-top:5px;
     margin-right:0px;
+  }
+
+  .page-wrapper {
+    margin: 30px auto 30px auto;
+    border: 1px solid #eee;
+    padding: 30px 20px 50px 20px;
+    width:90%;
+  }
+
+  .background-wrapper {
+    background-image: url("./../../assets/swishbackground.png");
+    background-repeat: no-repeat;
+    width:100%;
+    background-size:contain;
+    position:absolute;
+  }
+}
+
+@media (min-width: 1800px) {
+  .background-wrapper {
+    background-image:inherit;
+    margin: -30px auto 0 auto;
+    width: 1200px;
+    height: 1600px;
+    background-color:#a0aaae;
+    position:relative;
+    padding-top:60px;
   }
 }
