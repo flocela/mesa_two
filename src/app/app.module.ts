@@ -8,11 +8,13 @@ import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImmigrationComponent } from './immigration/immigration.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: 'dwi', component: DWIComponent, pathMatch: 'full'},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  { path: 'immigration', component: ImmigrationComponent, pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     DWIComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ImmigrationComponent
   ],
   imports: [
     RouterModule.forRoot((
