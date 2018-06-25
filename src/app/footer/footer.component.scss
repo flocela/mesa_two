@@ -1,0 +1,17 @@
+$dark-blue: #26313e;
+
+.info {
+  text-align:center;
+  font-size:1.0rem;
+  font-family: Times, serif;
+  line-height:1.1rem;
+}
+
+.footer {
+  border-top:2px solid $dark-blue;
+  border-bottom:2px solid $dark-blue;
+  margin: 20px 0px;
+  padding: 15px 0px;
+}
+
+
