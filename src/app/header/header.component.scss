@@ -5,6 +5,26 @@ $active: #E0CE5A;
 $black: #111;
 $navigation-color:#666;
 
+a:link{
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+a:visited{
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+a:hover {
+  color: $hover;
+  text-decoration:none;
+}
+
+a:active {
+  color: #E0CE5A;
+}
+
+
 .clear-fix {
   clear: both;
 }
@@ -45,33 +65,19 @@ $navigation-color:#666;
   color:$dark-blue;
 }
 
-.header-link  a:hover {
-  color: $hover;
-  text-decoration:none;
-}
-
-.header-link a{
-  color: $dark-blue;
-  text-decoration:none;
-}
-
-.header-link a:active {
-  color: #E0CE5A;
-}
-
 .header-link__last {
   border-bottom: 1px solid $dark-blue;
   margin-bottom: 5px;
 }
 
 .line-2px {
-  background-color:$black;
+  background-color:#222;
   width: 100%;
   height: 2px;
 }
 
 .line-1px {
-  background-color:$black;
+  background-color:#222;
   width: 100%;
   height: 1px;
 }
@@ -108,6 +114,26 @@ $navigation-color:#666;
   margin:16px 0 0 0;
   color:$black;
 }
+
+.maldonado-title a:link{
+  color: #000;
+  text-decoration:none;
+}
+
+.maldonado-title a:visited{
+  color: #000;
+  text-decoration:none;
+}
+
+.maldonado-title a:hover {
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+.maldonado-title a:active {
+  color: #bbb;
+}
+
 .menu-icon {
   float:left;
   display:inline-block;
@@ -143,6 +169,25 @@ $navigation-color:#666;
   margin-right:-50%;
   transform: translate(-50%, 0%);
   color:$black;
+}
+
+.office-title a:link{
+  color: #000;
+  text-decoration:none;
+}
+
+.office-title a:visited{
+  color: #000;
+  text-decoration:none;
+}
+
+.office-title-container a:hover {
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+.office-title-container a:active {
+  color: #bbb;
 }
 
 .spanish {
