@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.width = window.innerWidth;
     this.intro1 = 'Please remember, ';
-    this.intro2a = 'you don\'t have to navigate the legal system by yourself. ' +
+    this.intro2a = ' you don\'t have to navigate the legal system by yourself. ' +
       'I have over 15 years of experience as an attorney in Austin and can guide you through your ' +
       'legal issues. '
     this.intro2b = 'I understand if you\'re worried about caring for your family or being separated ' +
