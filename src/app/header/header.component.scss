@@ -25,6 +25,11 @@ a:active {
   color: #E0CE5A;
 }
 
+.header-link a.active {
+  color: #eee;
+  text-decoration:none;
+}
+
 .clear-fix {
   clear: both;
 }
@@ -280,6 +285,11 @@ a:active {
     margin:0;
     margin-right:-50%;
     transform: translate(-50%, -50%);
+  }
+
+  .small-link a.active {
+    color: #4F2107;
+    text-decoration:none;
   }
 
   .state-emblem {

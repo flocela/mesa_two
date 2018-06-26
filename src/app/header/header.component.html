@@ -17,13 +17,14 @@
     </section>
     <section [ngClass]="{'transition':showingMenu}" [hidden]="!showingMenu" class="dropdown-content">
       <section>
-        <h2 class="header-link"><a href="home">Home</a></h2>
+        <h2 class="header-link"><a routerLink="/"routerLinkActive="active"
+                                   [routerLinkActiveOptions]="{ exact: true }">Home</a></h2>
       </section>
       <section>
-        <h2 class="header-link"><a href="DWI">DWI/Criminal</a></h2>
+        <h2 class="header-link"><a routerLink="/DWI" routerLinkActive="active">DWI/<br>Criminal</a></h2>
       </section>
       <section>
-        <h2 class="header-link"><a href="Immigration">Immigration</a></h2>
+        <h2 class="header-link"><a routerLink="/Immigration" routerLinkActive="active">Immigration</a></h2>
       </section>
       <section>
         <h2 class="header-link header-link__last"><a href="DWI">Contact/Directions</a></h2>
@@ -58,13 +59,14 @@
   </section>
   <section class="small-links-container">
     <section class="small-link-container">
-      <h2 class="small-link"><a href="home">Home</a></h2>
+      <h2 class="small-link"><a routerLink="/"routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">Home</a></h2>
     </section>
     <section class="small-link-container">
-      <h2 class="small-link"><a href="DWI">DWI/<br>Criminal</a></h2>
+      <h2 class="small-link"><a routerLink="/DWI" routerLinkActive="active">DWI/<br>Criminal</a></h2>
     </section>
     <section class="small-link-container">
-      <h2 class="small-link"><a href="Immigration">Immigration</a></h2>
+      <h2 class="small-link"><a routerLink="/Immigration" routerLinkActive="active">Immigration</a></h2>
     </section>
     <section class="small-link-container">
       <h2 class="small-link"><a href="DWI">Contact/<br>Directions</a></h2>
@@ -108,7 +110,8 @@
   </section>
   <section class="medium-page-links">
     <section class="medium-link-container">
-      <h2 class="medium-link"><a routerLink="/" routerLinkActive="active">Home</a></h2>
+      <h2 class="medium-link"><a routerLink="/" routerLinkActive="active"
+                                 [routerLinkActiveOptions]="{ exact: true }">Home</a></h2>
     </section>
     <section class="medium-link-container">
       <h2 class="medium-link"><a routerLink="/DWI" routerLinkActive="active">DWI/<br>Criminal</a></h2>
