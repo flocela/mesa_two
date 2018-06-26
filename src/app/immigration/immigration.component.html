@@ -5,13 +5,13 @@
     </section>
     <app-header></app-header>
 
-    <section class="billboard-container">
+    <section [ngStyle] = "{'background-image': texasDome}" class="billboard-container">
     </section>
     <section class="line-5px">
     </section>
     <section class="intro-container">
       <img class="individual-photo"
-           src="../../assets/maldonado-immigration.jpg"
+           src={{maldonadoImmigration}}
            alt="ricardo-dulce-state-bar-05.jpg">
       <span class="intro-large">{{immigration1}}</span>
       <span class="intro-norm">{{immigration2}}</span>

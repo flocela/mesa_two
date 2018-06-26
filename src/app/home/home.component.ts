@@ -7,6 +7,12 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   width: number;
+  texasDome = "url('https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-14001.appspot.com/o/texas-dome-outside.jpg?" +
+    "alt=media&token=b7127ee7-6ed7-4e02-8cfa-986ecac39d3e')";
+  maldonadoIntroUrl = "https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-14001.appspot.com/o/maldonado-intro.jpg?" +
+    "alt=media&token=ce5f277f-e870-493d-a68a-1f6751d83b73";
   intro1: string;
   intro2a: string;
   intro2b: string;

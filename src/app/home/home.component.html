@@ -4,14 +4,13 @@
       {{width}}
     </section>
     <app-header></app-header>
-
-    <section class="billboard-container">
+    <section [ngStyle] = "{'background-image': texasDome}" class="billboard-container">
     </section>
     <section class="line-5px">
     </section>
     <section class="intro-container">
       <img class="individual-photo"
-           src="../../assets/maldonado-intro.jpg"
+           src={{maldonadoIntroUrl}}
            alt="maldonado-law-center.jpg">
       <span class="intro-large">{{intro1}}</span>
       <span class="intro-norm">{{intro2a}}</span>
