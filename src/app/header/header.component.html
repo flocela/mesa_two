@@ -27,7 +27,15 @@
         <h2 class="header-link"><a routerLink="/Immigration" routerLinkActive="active">Immigration</a></h2>
       </section>
       <section>
-        <h2 class="header-link header-link__last"><a href="DWI">Contact/Directions</a></h2>
+        <h2 class="header-link"><a href="DWI">Contact/Directions</a></h2>
+      </section>
+      <section>
+        <h2 class="header-link-facebook header-link__last">
+          <a href={{facebookLinkURL}}>Find us on
+            <img src = {{facebookURL}}
+                 alt="facebook.png" class="facebook">
+          </a>
+        </h2>
       </section>
     </section>
   </section>
@@ -52,8 +60,8 @@
   <section class="line-1px">
   </section>
   <section class="marble-header">
-    <img src = "/assets/marble-header.png" alt="marble-header.png" class="marble-image">
-    <img src = "/assets/state-bar-emblem.png" alt="state-emblem.png" class="state-emblem">
+    <img src = {{stateBarBackgroundURL}} alt="state-bar-background.jpg" class="marble-image">
+    <img src = {{stateBarEmblemURL}} alt="state-bar-emblem.png" class="state-emblem">
   </section>
   <section class="line-1px">
   </section>
@@ -106,7 +114,12 @@
     812 San Antonio St.<br>
     Suite 118<br>
     Austin, TX 78701<br>
-    find us on <img src = "/assets/facebook-100x100.png" alt="facebook.png" class="facebook">
+    <section class="medium-facebook">
+      <a href={{facebookLinkURL}}>find us on
+        <img src = {{facebookURL}}
+             alt="facebook.png" class="facebook">
+      </a>
+    </section>
   </section>
   <section class="medium-page-links">
     <section class="medium-link-container">

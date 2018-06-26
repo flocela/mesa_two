@@ -5,6 +5,7 @@ $active: #E0CE5A;
 $black: #111;
 $navigation-color:#36464e;
 $white: #bbb;
+$bright-blue:#002E6B;
 
 a:link{
   color: $dark-blue;
@@ -52,7 +53,8 @@ a:active {
 .facebook {
   height:18px;
   width:18px;
-  margin-right:5px;
+  margin-bottom:-2px;
+  margin-left:1px;
 }
 
 .header-link {
@@ -68,6 +70,44 @@ a:active {
   font-weight:normal;
   width:65%;
   color:$dark-blue;
+}
+
+.header-link-facebook {
+  text-align:center;
+  border-top: 1px solid $dark-blue;
+  margin:0 auto 0 auto;
+  padding: 10px;
+  font-size:1.2rem;
+  font-family: Times, serif;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+  line-height:2.25rem;
+  font-weight:normal;
+  width:65%;
+  color:$dark-blue;
+}
+
+.header-link-facebook a:link {
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+.header-link-facebook a:visited {
+  color: $dark-blue;
+  text-decoration:none;
+}
+
+.header-link-facebook a:hover {
+  background-color: $hover;
+  padding:6px;
+  border-radius: 4px;
+}
+
+.header-link-facebook a:active {
+  color: #E0CE5A;
+  background-color: #eee;
+  padding:6px;
+  border-radius: 4px;
 }
 
 .header-link__last {
@@ -331,6 +371,10 @@ a:active {
     color: #E0CE5A;
   }
 
+  .facebook {
+    margin-right:3px;
+  }
+
   .medium-link a.active {
     color: #fff;
     text-decoration:none;
@@ -340,6 +384,7 @@ a:active {
     display: block;
     max-width:976px;
   }
+
   .medium-contacts-container {
     display:inline-block;
     float:right;
@@ -347,8 +392,40 @@ a:active {
     width:24%;
     text-align:right;
     font-family: Times, serif;
-    font-size:1.0rem;
+    font-size:1.05rem;
     line-height: 1.3rem;
+  }
+
+  .medium-facebook {
+    text-align:right;
+    font-family: Times, serif;
+    font-size:1.05rem;
+    line-height: 1.3rem;
+    color:$bright-blue;
+    margin-top:2px;
+  }
+
+  .medium-facebook a:link {
+    color: $bright-blue;
+    text-decoration: none;
+  }
+
+  .medium-facebook a:visited {
+    color: $bright-blue;
+    text-decoration: none;
+  }
+
+  .medium-facebook a:hover {
+    background-color: $hover;
+    padding:6px;
+    border-radius: 4px;
+  }
+
+  .medium-facebook a:active {
+    color: #E0CE5A;
+    background-color: #eee;
+    padding:6px;
+    border-radius: 4px;
   }
 
   .medium-office-maldonado-title {
