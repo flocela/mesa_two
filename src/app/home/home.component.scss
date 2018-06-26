@@ -1,6 +1,6 @@
 $dark-blue: #001F48;
 $background-blue: #929da1;
-$navigation-color:#666;
+$navigation-color:#36464e;
 
 .billboard-container {
   display:none;
@@ -83,7 +83,7 @@ $navigation-color:#666;
   .line-5px {
     display:block;
     max-width:976px;
-    background-color:$dark-blue;
+    background-color:$navigation-color;;
     width: 100%;
     height:5px;
     margin-top:5px;
@@ -103,6 +103,7 @@ $navigation-color:#666;
     width:100%;
     background-size:contain;
     position:absolute;
+    background-position:0px 0px;
   }
 }
 
