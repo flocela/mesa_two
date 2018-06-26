@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {DWIComponent} from './dwi/dwi.component';
-import {RouterModule, Routes} from '@angular/router';
+import { DWIComponent } from './dwi/dwi.component';
+import { RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImmigrationComponent } from './immigration/immigration.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent, pathMatch: 'full'},
-  { path: 'dwi', component: DWIComponent, pathMatch: 'full'},
-  { path: 'immigration', component: ImmigrationComponent, pathMatch: 'full'},
-  { path: '', redirectTo: '/home', pathMatch: 'full'}
+  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: 'home', redirectTo: '', pathMatch: 'full'},
+  { path: 'DWI', component: DWIComponent, pathMatch: 'full'},
+  { path: 'Immigration', component: ImmigrationComponent, pathMatch: 'full'},
+  { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({
