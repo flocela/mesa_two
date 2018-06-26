@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImmigrationComponent } from './immigration/immigration.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ImmigrationComponent
+    ImmigrationComponent,
+    ContactsComponent
   ],
   imports: [
     RouterModule.forRoot((
