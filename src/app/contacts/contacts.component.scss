@@ -2,8 +2,32 @@ $dark-blue: #26313e;
 $background-blue: #929da1;
 $navigation-color:#666;
 $black: #111;
-$hover: #bbb;
+$hover: #ccc;
 $bright-blue:#002E6B;
+
+a:link {
+  color: $bright-blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $bright-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: $hover;
+  color:$bright-blue;
+  padding:6px;
+  border-radius: 4px;
+}
+
+a:active {
+  color: #E0CE5A;
+  background-color: #eee;
+  padding:6px;
+  border-radius: 4px;
+}
 
 .billboard-container {
   display:none;
@@ -17,7 +41,6 @@ $bright-blue:#002E6B;
   background-size:cover;
   background-repeat:no-repeat;
   background-position: 0% 50%;
-  margin-top:5px;
   border-top:1px solid #222;
   border-bottom:1px solid #222;
 }
@@ -30,7 +53,7 @@ $bright-blue:#002E6B;
 }
 
 .directions-info {
-  margin: 15px auto 12px auto;
+  margin: 30px auto 12px auto;
   float:left;
   width:100%;
   text-align:center;
@@ -49,7 +72,15 @@ $bright-blue:#002E6B;
 }
 
 .footer-spacing {
-  height:40px;
+  height:20px;
+}
+
+.google-maps-info {
+  font-size:1.15rem;
+  font-family: Times, serif;
+  line-height:1.5rem;
+  margin-left:2px;
+  text-align: center;
 }
 
 .intro-container {
@@ -64,26 +95,6 @@ $bright-blue:#002E6B;
   font-size:1.15rem;
   font-family: Times, serif;
   line-height:1.5rem;
-}
-
-.text-norm a:link{
-  color: $bright-blue;
-  text-decoration:none;
-}
-
-.text-norm a:visited{
-  color: $bright-blue;
-  text-decoration:none;
-}
-
-.text-norm a:hover {
-  color: $hover;
-  text-decoration:none;
-}
-
-.text-norm a:active {
-  text-decoration:none;
-  color: #E0CE5A;
 }
 
 .line-5px {
@@ -113,6 +124,13 @@ $bright-blue:#002E6B;
   .title {
     border-bottom:1px solid $black;
   }
+  .google-maps-info {
+    text-align: left;
+    margin-left:5px;
+  }
+  .contact-info {
+    width:50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -127,9 +145,6 @@ $bright-blue:#002E6B;
     margin-top:5px;
   }
 
-  .contact-info {
-    width:50%;
-  }
 
 
   .garage-background {
