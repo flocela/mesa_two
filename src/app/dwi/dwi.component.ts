@@ -13,15 +13,20 @@ export class DWIComponent implements OnInit {
   maldonadoDWIUrl = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-14001.appspot.com/o/maldonado_dwi.jpg?" +
     "alt=media&token=92bd066b-9427-400e-afdf-075b40a97dd4";
+  titleEnglish = "DWI and Criminal Defense"
   dwi1: string;
   dwi2: string;
   dwi3: string;
   dwi4: string;
   dwi5: string;
+
+  title: string;
+
   constructor() { }
 
   ngOnInit() {
     this.width = window.innerWidth;
+    this.title = this.titleEnglish;
     this.dwi1 = 'I have over 15 years of experience';
     this.dwi2 = 'as a criminal defense attorney. I practice in Austin where the majority of my cases are ' +
       'assault family violence cases. Almost all if not all of these cases are set for trial in ' +

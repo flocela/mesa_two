@@ -1,6 +1,7 @@
 $dark-blue: #26313e;
 $background-blue: #929da1;
 $navigation-color:#666;
+$black: #222;
 
 .billboard-container {
   display:none;
@@ -44,6 +45,24 @@ $navigation-color:#666;
   width:100%;
   max-width:976px;
   margin:0 auto;
+}
+
+.title {
+  text-align:center;
+  font-size:1.45rem;
+  font-family: Times, serif;
+  letter-spacing: .11rem;
+  line-height:1.8rem;
+  font-weight:bold;
+  margin:0 auto;
+  padding: 12px;
+  border-bottom:2px solid $black;
+}
+
+@media (min-width: 576px) {
+  .title {
+    border-bottom:1px solid $black;
+  }
 }
 
 @media (min-width: 576px) {
@@ -93,6 +112,7 @@ $navigation-color:#666;
     border: 1px solid #eee;
     padding: 30px 20px 50px 20px;
     width:90%;
+    background-color:rgba(76, 100, 113, 0.2);
   }
 
   .background-wrapper {

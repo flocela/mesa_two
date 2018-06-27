@@ -13,11 +13,15 @@ export class ImmigrationComponent implements OnInit {
     "maldonadoattorney-14001.appspot.com/o/maldonado-immigration.jpg?" +
     "alt=media&token=22f59cdb-dee1-464b-8167-cca687a613c1";
   width: number;
+  titleEnglish = "Immigration";
   immigration1: string;
   immigration2: string;
   immigration3: string;
   immigration4: string;
   immigration5: string;
+
+  title: string;
+
   constructor() { }
 
   ngOnInit() {
@@ -26,8 +30,9 @@ export class ImmigrationComponent implements OnInit {
     this.immigration2 = ' My law practice has shifted away from immigration and DACA ' +
       'applications. However, I am still here for advice with legal issues you ' +
       'may be having. This is especially true if you feel your problems are becoming ' +
-      'complicated because of your legal status.'
-    this.immigration3 = 'Our staff are here to help all people who have come this great nation.'
+      'complicated because of your legal status.';
+    this.immigration3 = 'Our staff are here to help all people who have come to the United States.';
+    this.title = this.titleEnglish;
   }
 
   @HostListener('window:resize', ['$event'])
