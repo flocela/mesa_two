@@ -9,24 +9,42 @@
     </section>
     <section class="line-5px">
     </section>
-    <section class="intro-container">
-      <img class="individual-photo"
-           src={{maldonadoImmigration}}
-           alt="ricardo-dulce-state-bar-05.jpg">
-      <span class="intro-large">{{immigration1}}</span>
-      <span class="intro-norm">{{immigration2}}</span>
-      <br>
-      <br>
-      <span class="intro-norm">{{immigration3}}</span>
-      <br>
-      <br>
-      <span class="intro-norm">{{immigration4}}</span>
-      <br>
-      <br>
-      <span class="intro-norm">{{immigration5}}</span>
+    <h2 class="title">
+      {{title}}
+    </h2>
+    <section class="contact-info">
+      <section class="text-norm">{{street}}</section>
+      <section class="text-norm">{{city}}</section>
+      <section class="text-norm">{{email}}</section>
     </section>
-    <section class="clearfix"></section>
-    <app-footer></app-footer>
+    <section class="contact-info">
+      <section class="text-norm">{{telephone}}</section>
+      <section class="text-norm">{{fax}}</section>
+      <section class="text-norm">
+        <a href={{facebookLinkURL}}>Find us on
+          <img src = {{facebookURL}}
+               alt="facebook.png" class="facebook">
+        </a>
+      </section>
+    </section>
+    <section class="clearfix">
+    </section>
+    <section [ngStyle] = "{'background-image': sanAntonioGarageUrl}" class="garage-background">
+    </section>
+    <section class="clearfix">
+    </section>
+    <section class="directions-info text-norm">
+      {{directions}}
+    </section>
+    <section class="clearfix">
+    </section>
+    <section [ngStyle] = "{'background-image': sanAntonioGarageUrl}" class="garage-background">
+    </section>
+    <section class="clearfix">
+    </section>
+    <section class="footer-spacing">
+
+    </section>
   </section>
 </section>
 

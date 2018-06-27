@@ -1,13 +1,55 @@
 $dark-blue: #26313e;
 $background-blue: #929da1;
 $navigation-color:#666;
+$black: #111;
+$hover: #bbb;
+$bright-blue:#002E6B;
 
 .billboard-container {
   display:none;
 }
 
+.garage-background {
+  display:block;
+  width:100%;
+  max-width:976px;
+  height:277px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: 0% 50%;
+  margin-top:5px;
+  border-top:2px solid #222;
+  border-bottom:2px solid #222;
+}
+
+.contact-info {
+  margin: 15px auto 12px auto;
+  float:left;
+  width:100%;
+  text-align:center;
+}
+
+.directions-info {
+  margin: 15px auto 12px auto;
+  float:left;
+  width:100%;
+  text-align:center;
+}
+
 .clearfix {
   clear:both;
+}
+
+.facebook {
+  height:18px;
+  width:18px;
+  margin-bottom:0px;
+  margin-left:1px;
+  margin-top:2px;
+}
+
+.footer-spacing {
+  height:40px;
 }
 
 .intro-container {
@@ -19,9 +61,29 @@ $navigation-color:#666;
 
 .text-norm {
   text-align:center;
-  font-size:1.1rem;
+  font-size:1.15rem;
   font-family: Times, serif;
-  line-height:1.35rem;
+  line-height:1.5rem;
+}
+
+.text-norm a:link{
+  color: $bright-blue;
+  text-decoration:none;
+}
+
+.text-norm a:visited{
+  color: $bright-blue;
+  text-decoration:none;
+}
+
+.text-norm a:hover {
+  color: $hover;
+  text-decoration:none;
+}
+
+.text-norm a:active {
+  text-decoration:none;
+  color: #E0CE5A;
 }
 
 .line-5px {
@@ -32,6 +94,13 @@ $navigation-color:#666;
   width:100%;
   max-width:976px;
   margin:0 auto;
+}
+
+.title {
+  text-align:center;
+  margin:0 auto;
+  padding: 12px;
+  border-bottom:2px solid $black;
 }
 
 @media (min-width: 768px) {
