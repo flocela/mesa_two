@@ -11,7 +11,7 @@ export class ImmigrationComponent implements OnInit {
     "alt=media&token=9f87109e-3e4e-4ac1-a3ae-750459db4c01')";
   maldonadoImmigration = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/maldonado-immigration.jpg?" +
-    "alt=media&token=fb2ab89c-4d15-40ee-ad5f-4c32fddcf5fa";
+    "alt=media&token=0c18a4d1-7d37-4fc9-82c9-fccbb9d28cef";
   width: number;
   titleEnglish = "Immigration";
   immigration1: string;
@@ -26,12 +26,14 @@ export class ImmigrationComponent implements OnInit {
 
   ngOnInit() {
     this.width = window.innerWidth;
-    this.immigration1 = 'I fully support immigrants in our nation. ';
-    this.immigration2 = ' My law practice has shifted away from immigration and DACA ' +
+    this.immigration1 = 'I fully support immigrants in the United States. ';
+    this.immigration2 = 'Immigrants and their children make the U.S. ' +
+    'unique, and also a better nation. ';
+    this.immigration3 = ' My law practice has shifted away from immigration and DACA ' +
       'applications. However, I am still here for advice with legal issues you ' +
       'may be having. This is especially true if you feel your problems are becoming ' +
       'complicated because of your legal status.';
-    this.immigration3 = 'Our staff are here to help all people who have come to the United States.';
+    this.immigration4 = 'Our staff are here to help all people who have come to the United States.';
     this.title = this.titleEnglish;
   }
 
