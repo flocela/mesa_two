@@ -49,7 +49,7 @@ $black: #222;
 
 .title {
   text-align:center;
-  font-size:1.45rem;
+  font-size:1.40rem;
   font-family: Times, serif;
   letter-spacing: .11rem;
   line-height:1.8rem;
@@ -69,7 +69,7 @@ $black: #222;
   .individual-photo {
     display:inline-block;
     float:right;
-    max-width:300px;
+    max-width:280px;
     height:auto;
     width: 100%;
     border: 1px solid #222;
@@ -82,7 +82,7 @@ $black: #222;
     display:block;
     width:100%;
     max-width:976px;
-    background-image: url("./../../assets/austin_night_bridge.jpg");
+    background-image: url("../../assets/austin_night.jpg");
     height:277px;
     background-size:cover;
     background-repeat:no-repeat;

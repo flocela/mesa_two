@@ -7,11 +7,11 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class ImmigrationComponent implements OnInit {
   texasDome = "url('https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/texas-dome-inside.jpg?" +
-    "alt=media&token=ada11d20-dcda-401e-b7f9-d886080dab6d')";
+    "maldonadoattorney-28622.appspot.com/o/texas-dome-inside.jpg?" +
+    "alt=media&token=9f87109e-3e4e-4ac1-a3ae-750459db4c01')";
   maldonadoImmigration = "https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/maldonado-immigration.jpg?" +
-    "alt=media&token=22f59cdb-dee1-464b-8167-cca687a613c1";
+    "maldonadoattorney-28622.appspot.com/o/maldonado-immigration.jpg?" +
+    "alt=media&token=fb2ab89c-4d15-40ee-ad5f-4c32fddcf5fa";
   width: number;
   titleEnglish = "Immigration";
   immigration1: string;

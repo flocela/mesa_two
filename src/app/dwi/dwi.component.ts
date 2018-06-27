@@ -8,11 +8,12 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class DWIComponent implements OnInit {
   width: number;
   austinNightUrl = "url('https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/austin_night_bridge.jpg?" +
-    "alt=media&token=901e675a-84d4-46ef-9486-e6eebf0e3702')";
+    "maldonadoattorney-28622.appspot.com/o/austin_night.jpg?" +
+    "alt=media&token=65546537-d8b9-4c38-b1cd-8918bfe51378')";
   maldonadoDWIUrl = "https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/maldonado_dwi.jpg?" +
-    "alt=media&token=92bd066b-9427-400e-afdf-075b40a97dd4";
+    "maldonadoattorney-28622.appspot.com/o/maldonado_dwi.jpg?" +
+    "alt=media&token=3d146323-1a2b-4e18-a007-f8005e20d723";
+
   titleEnglish = "DWI and Criminal Defense"
   dwi1: string;
   dwi2: string;

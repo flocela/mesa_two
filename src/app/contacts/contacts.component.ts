@@ -9,14 +9,14 @@ export class ContactsComponent implements OnInit {
   facebookLinkURL = "https://www.facebook.com/" +
     "The-Law-Office-of-Ricardo-Maldonado-339650069560173/";
   facebookURL = "https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/facebook-100x100.png?"+
-    "alt=media&token=678e72a4-f3f4-47ae-ac80-d4594dec9050";
+    "maldonadoattorney-28622.appspot.com/o/facebook-100x100.png?" +
+    "alt=media&token=fdc47710-60b2-479b-b5df-fc07df17a3d0";
   sanAntonioStURL = "url('https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/san-antonio-st.jpg?" +
-    "alt=media&token=4febbc4d-0ea5-4ece-bc8a-443a7b9bb78e')";
+    "maldonadoattorney-28622.appspot.com/o/san-antonio-st.jpg?" +
+    "alt=media&token=ffa27626-1417-42a4-b24f-478f646d434d')";
   sanAntonioGarageUrl = "url('https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-14001.appspot.com/o/san-antonio-garage.jpg?" +
-    "alt=media&token=29983ba2-dcca-48e0-b5b6-2f354d4dbf57')";
+    "maldonadoattorney-28622.appspot.com/o/san-antonio-garage.jpg?" +
+    "alt=media&token=8b24c584-3825-4e91-920b-5c37b4072430')";
 
   directionsEnglish = "The entrance to the parking garage is on the 9th street side of our building.\n" +
     "Please ask the receptionist for a reimbursement ticket.";

@@ -10,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImmigrationComponent } from './immigration/immigration.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import {environment} from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
