@@ -17,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'home', redirectTo: '', pathMatch: 'full'},
   { path: 'DWI', component: DWIComponent, pathMatch: 'full'},
   { path: 'Immigration', component: ImmigrationComponent, pathMatch: 'full'},
+  { path: 'Contact', component: ContactsComponent, pathMatch: 'full'},
   { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
