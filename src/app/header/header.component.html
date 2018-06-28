@@ -1,8 +1,8 @@
 <section class="x-small">
   <section class="line-2px">
   </section>
-  <section class="spanish">
-    En Español
+  <section class="spanish" (click)="espanolPressed()">
+    {{spanishText}}
   </section>
   <section class="line-1px">
   </section>
@@ -17,8 +17,12 @@
     </section>
     <section [ngClass]="{'transition':showingMenu}" [hidden]="!showingMenu" class="dropdown-content">
       <section>
-        <h2 class="header-link"><a routerLink="/"routerLinkActive="active"
-                                   [routerLinkActiveOptions]="{ exact: true }">Home</a></h2>
+        <h2 class="header-link"><a routerLink='/'
+                                   routerLinkActive="active"
+                                   [routerLinkActiveOptions]="{ exact: true }">
+                                   Home
+                                </a>
+        </h2>
       </section>
       <section>
         <h2 class="header-link"><a routerLink="/DWI" routerLinkActive="active">DWI/<br>Criminal</a></h2>

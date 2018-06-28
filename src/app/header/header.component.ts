@@ -1,4 +1,5 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
+import {LanguageService} from '../language.service';
 
 @Component({
   selector: 'app-header',
@@ -19,8 +20,18 @@ export class HeaderComponent implements OnInit {
   stateBarEmblemURL = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/state-bar-emblem.png?" +
     "alt=media&token=6a562efc-f9df-474b-9953-a9ebd78c3551";
+
+  @Output() espanolPressedEmitter = new EventEmitter();
+  isSpanish = false;
+  spanishText: string;
+  spanishTextEng = "en Español";
+  spanishTextSpn = "in English";
+
+  constructor(private langService: LanguageService){}
+
   ngOnInit() {
     this.width = window.innerWidth;
+    this.update();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -30,6 +41,18 @@ export class HeaderComponent implements OnInit {
 
   showMenu() {
     this.showingMenu = !this.showingMenu;
+  }
+
+  espanolPressed() {
+    this.espanolPressedEmitter.emit();
+  }
+
+  update () {
+    this.isSpanish = this.langService.getInSpanish();
+    if (this.isSpanish)
+      this.spanishText = this.spanishTextSpn;
+    else
+      this.spanishText = this.spanishTextEng;
   }
 
 }

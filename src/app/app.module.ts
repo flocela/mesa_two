@@ -10,9 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImmigrationComponent } from './immigration/immigration.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import {LanguageService} from './language.service';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: '', component: HomeComponent, data: {inSpanish: 'inSpanish'}, pathMatch: 'full'},
   { path: 'home', redirectTo: '', pathMatch: 'full'},
   { path: 'DWI', component: DWIComponent, pathMatch: 'full'},
   { path: 'Immigration', component: ImmigrationComponent, pathMatch: 'full'},
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
     )),
     BrowserModule
   ],
-  providers: [],
+  providers: [LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

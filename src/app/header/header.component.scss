@@ -7,6 +7,10 @@ $navigation-color:#36464e;
 $white: #bbb;
 $bright-blue:#002E6B;
 
+.small {
+  display:none;
+}
+
 a:link{
   color: $dark-blue;
   text-decoration:none;
@@ -136,9 +140,6 @@ a:active {
   display: none;
 }
 
-.small {
-  display:none;
-}
 
 .maldonado-title-container {
   height:50px;
@@ -245,6 +246,14 @@ a:active {
   margin-top: 5px;
   margin-bottom:2px;
   color:$black;
+}
+
+.spanish:hover {
+  color: $hover;
+}
+
+.spanish:active {
+  color: $active;
 }
 
 @media (min-width: 387px) {
