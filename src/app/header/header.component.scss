@@ -1,11 +1,12 @@
 $dark-blue: #001F48;
 $background-blue: #929da1;
-$hover: #bbb;
+$hover: #999;
 $active: #E0CE5A;
 $black: #111;
 $navigation-color:#36464e;
 $white: #bbb;
 $bright-blue:#002E6B;
+$background-hover:#bbb;
 
 .small {
   display:none;
@@ -102,7 +103,7 @@ a:active {
 }
 
 .header-link-facebook a:hover {
-  background-color: $hover;
+  background-color: $background-hover;
   padding:6px;
   border-radius: 4px;
 }
@@ -425,7 +426,7 @@ a:active {
   }
 
   .medium-facebook a:hover {
-    background-color: $hover;
+    background-color: $background-hover;
     padding:6px;
     border-radius: 4px;
   }
@@ -485,6 +486,22 @@ a:active {
     margin:0;
     margin-right:-50%;
     transform: translate(-50%, -50%);
+    color: $white;
+  }
+
+
+  .medium-link:visited{
+    color: $white;
+    text-decoration:none;
+  }
+
+  .medium-link:hover {
+    color: $hover;
+    text-decoration:none;
+  }
+
+  .medium-link:active {
+    color: #E0CE5A;
   }
 
   .small {

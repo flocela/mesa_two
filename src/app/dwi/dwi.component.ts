@@ -61,8 +61,7 @@ export class DWIComponent implements OnInit {
   title: string;
 
   constructor(private langService: LanguageService) {
-    this.inSpanish = this.langService.getInSpanish();
-    this.initText();}
+    this.inSpanish = this.langService.getInSpanish();}
 
   ngOnInit() {
     this.width = window.innerWidth;

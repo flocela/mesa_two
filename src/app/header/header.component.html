@@ -84,7 +84,7 @@
       <h2 class="small-link"><a routerLink="/Contact" routerLinkActive="active">Contact</a></h2>
     </section>
     <section class="small-link-container">
-      <h2 class="small-link">En<br>Español</h2>
+      <h2 class="small-link" (click)="espanolPressed()">{{spanishText}}</h2>
     </section>
   </section>
   <section class="clear-fix">
@@ -120,7 +120,7 @@
     Austin, TX 78701<br>
     <section class="medium-facebook">
       <a href={{facebookLinkURL}}>find us on
-        <img src = {{facebookURL}}
+        <img src = {{facebookImg}}
              alt="facebook.png" class="facebook">
       </a>
     </section>
@@ -140,7 +140,7 @@
       <h2 class="medium-link"><a routerLink="/Contact" routerLinkActive="active">Contact/<br>Immigration</a></h2>
     </section>
     <section class="medium-link-container">
-      <h2 class="medium-link">En<br>Español</h2>
+      <h2 class="medium-link" (click)="espanolPressed()">{{spanishText}}</h2>
     </section>
   </section>
 </section>

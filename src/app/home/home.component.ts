@@ -10,12 +10,13 @@ import {LanguageService} from '../language.service';
 })
 export class HomeComponent implements OnInit {
   width: number;
-  texasDomeBckgrd = "url('https://firebasestorage.googleapis.com/v0/b/" +
-    "maldonadoattorney-28622.appspot.com/o/texas-dome-outside.jpg?" +
-    "alt=media&token=ad4bd1cc-d97d-4611-85bf-e48c5417d250')";
   maldonadoIntroImg = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/maldonado-intro.jpg?" +
     "alt=media&token=e86c63f4-5162-4c84-84d8-57c8d587eb8f";
+  texasDomeBckgrd = "url('https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-28622.appspot.com/o/texas-dome-outside.jpg?" +
+    "alt=media&token=ad4bd1cc-d97d-4611-85bf-e48c5417d250')";
+
   inSpanish = false;
 
   intro1Eng = 'Please remember, ';
