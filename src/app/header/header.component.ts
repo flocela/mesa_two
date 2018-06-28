@@ -20,18 +20,42 @@ export class HeaderComponent implements OnInit {
     "alt=media&token=6a562efc-f9df-474b-9953-a9ebd78c3551";
 
   @Output() espanolPressedEmitter = new EventEmitter();
+  inSpanish = false;
+
+  contactEng = "Contact/\nDirections";
+  dwiEng = "DWI/\nCriminal";
+  findUsEng = "find us on ";
+  homeEng = "Home";
+  lawOfficeEng = "The Law Office of ";
+  immigrationEng = "Immigration";
+  spanishTextEng = "en Español";
+
+  contactSpn = "Contáctanos/\nDirecciones";
+  dwiSpn = "DWI/\nCriminal";
+  findUsSpn = "Encuéntranos en ";
+  homeSpn = "Inicio";
+  immigrationSpn = "Inmigración";
+  lawOfficeSpn = "Oficina de Leyes de ";
+  spanishTextSpn = "in English";
 
   width: number;
   isSpanish = false;
   showingMenu = false;
+
+  contact: string;
+  dwi: string;
+  findUs: String;
+  home: string;
+  immigration: string;
+  lawOffice: string;
   spanishText: string;
-  spanishTextEng = "en Español";
-  spanishTextSpn = "in English";
+
 
   constructor(private langService: LanguageService){}
 
   ngOnInit() {
     this.width = window.innerWidth;
+    this.inSpanish = this.langService.getInSpanish();
     this.update();
   }
 
@@ -50,10 +74,24 @@ export class HeaderComponent implements OnInit {
 
   update () {
     this.isSpanish = this.langService.getInSpanish();
-    if (this.isSpanish)
+    if (this.isSpanish) {
+      this.contact = this.contactSpn;
+      this.dwi = this.dwiSpn;
+      this.findUs = this.findUsSpn;
+      this.home = this.homeSpn;
+      this.immigration = this.immigrationSpn;
+      this.lawOffice = this.lawOfficeSpn;
       this.spanishText = this.spanishTextSpn;
-    else
+    }
+    else {
+      this.contact = this.contactEng;
+      this.dwi = this.dwiEng;
+      this.findUs = this.findUsEng;
+      this.home = this.homeEng;
+      this.immigration = this.immigrationEng;
+      this.lawOffice = this.lawOfficeEng;
       this.spanishText = this.spanishTextEng;
+    }
   }
 
 }
