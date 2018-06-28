@@ -10,12 +10,14 @@ import {LanguageService} from '../language.service';
 })
 export class HomeComponent implements OnInit {
   width: number;
-  texasDome = "url('https://firebasestorage.googleapis.com/v0/b/" +
+  texasDomeBckgrd = "url('https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/texas-dome-outside.jpg?" +
     "alt=media&token=ad4bd1cc-d97d-4611-85bf-e48c5417d250')";
-  maldonadoIntroUrl = "https://firebasestorage.googleapis.com/v0/b/" +
+  maldonadoIntroImg = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/maldonado-intro.jpg?" +
     "alt=media&token=e86c63f4-5162-4c84-84d8-57c8d587eb8f";
+  inSpanish = false;
+
   intro1Eng = 'Please remember, ';
   intro2Eng = ' you don\'t have to navigate the legal system by yourself. ' +
     'I have over 15 years of experience as an attorney in Austin and can guide you through your ' +
@@ -41,14 +43,11 @@ export class HomeComponent implements OnInit {
     "Asegurar su liberación o la liberación de alguien cercano a usted es lo más importante.";
   intro5Spn = "Llámenos, mi oficina y yo estamos aquí para ayudar.";
 
-
   intro1: string;
   intro2: string;
   intro3: string;
   intro4: string;
   intro5: string;
-
-  inSpanish = false;
 
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
