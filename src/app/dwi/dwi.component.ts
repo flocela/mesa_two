@@ -60,12 +60,11 @@ export class DWIComponent implements OnInit {
   dwi4: string;
   title: string;
 
-  constructor(private langService: LanguageService) {
+  constructor (private langService: LanguageService) {
     this.inSpanish = this.langService.getInSpanish();}
 
   ngOnInit() {
     this.width = window.innerWidth;
-    this.title = this.titleEnglish;
     this.initText();
   }
 

@@ -3,9 +3,9 @@
     <section style="position:absolute; z-index:5;">
       {{width}}
     </section>
-    <app-header></app-header>
+    <app-header (espanolPressedEmitter)="espanolPressed()"></app-header>
 
-    <section [ngStyle] = "{'background-image': sanAntonioStURL}" class="billboard-container">
+    <section [ngStyle] = "{'background-image': sanAntonioStImg}" class="billboard-container">
     </section>
     <section class="line-5px">
     </section>
@@ -22,7 +22,7 @@
       <section class="text-norm">{{fax}}</section>
       <section class="text-norm">
         <a href={{facebookLinkURL}}>Find us on
-          <img src = {{facebookURL}}
+          <img src = "{{facebookImg}}"
                alt="facebook.png" class="facebook">
         </a>
       </section>
@@ -33,7 +33,7 @@
       <a href={{googleClickUrl}}>{{googleMapsClick}}
       </a>
     </section>
-    <section [ngStyle] = "{'background-image': sanAntonioMapUrl}" class="garage-background">
+    <section [ngStyle] = "{'background-image': sanAntonioMapBckgrd}" class="garage-background">
     </section>
     <section class="clearfix">
     </section>
@@ -42,7 +42,7 @@
     </section>
     <section class="clearfix">
     </section>
-    <section [ngStyle] = "{'background-image': sanAntonioGarageUrl}" class="garage-background">
+    <section [ngStyle] = "{'background-image': sanAntonioGarageBckgrd}" class="garage-background">
     </section>
     <section class="clearfix">
     </section>
