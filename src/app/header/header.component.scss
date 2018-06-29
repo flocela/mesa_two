@@ -1,30 +1,30 @@
-$dark-blue: #001F48;
-$background-blue: #929da1;
-$hover: #999;
 $active: #E0CE5A;
-$black: #111;
-$navigation-color:#36464e;
-$white: #bbb;
-$bright-blue:#002E6B;
 $background-hover:#bbb;
+$black111: #111;
+$blue-bright:#002E6B;
+$blue-dark: #001F48;
+$hover: #999;
+$navigation-bar:#36464e;
+$white: #bbb;
 
 .small {
   display:none;
 }
 
-a:link{
-  color: $dark-blue;
+.medium {
+  display: none;
+}
+
+a {
   text-decoration:none;
 }
 
-a:visited{
-  color: $dark-blue;
-  text-decoration:none;
+a:link, a:visited {
+  color: $blue-dark;
 }
 
 a:hover {
   color: $hover;
-  text-decoration:none;
 }
 
 a:active {
@@ -33,7 +33,6 @@ a:active {
 
 .header-link a.active {
   color: #eee;
-  text-decoration:none;
 }
 
 .clear-fix {
@@ -64,7 +63,7 @@ a:active {
 
 .header-link {
   text-align:center;
-  border-top: 1px solid $dark-blue;
+  border-top: 1px solid $blue-dark;
   margin:0 auto 0 auto;
   padding: 12px;
   font-size:1.2rem;
@@ -74,12 +73,12 @@ a:active {
   line-height:1.8rem;
   font-weight:normal;
   width:65%;
-  color:$dark-blue;
+  color: $blue-dark;
 }
 
 .header-link-facebook {
   text-align:center;
-  border-top: 1px solid $dark-blue;
+  border-top: 1px solid $blue-dark;
   margin:0 auto 0 auto;
   padding: 10px;
   font-size:1.2rem;
@@ -89,17 +88,12 @@ a:active {
   line-height:2.25rem;
   font-weight:normal;
   width:65%;
-  color:$dark-blue;
-}
-
-.header-link-facebook a:link {
-  color: $dark-blue;
+  color: $blue-dark;
   text-decoration:none;
 }
 
-.header-link-facebook a:visited {
-  color: $dark-blue;
-  text-decoration:none;
+.header-link-facebook a:link, .header-link-facebook a:visited {
+  color: $blue-dark;
 }
 
 .header-link-facebook a:hover {
@@ -116,7 +110,7 @@ a:active {
 }
 
 .header-link__last {
-  border-bottom: 1px solid $dark-blue;
+  border-bottom: 1px solid $blue-dark;
   margin-bottom: 5px;
 }
 
@@ -132,15 +126,10 @@ a:active {
   height: 1px;
 }
 
-.material-icons.md-18 { font-size: 18px;  color:$black;}
-.material-icons.md-24 { font-size: 24px;  color:$black;}
-.material-icons.md-36 { font-size: 36px;  color:$black;}
-.material-icons.md-48 { font-size: 48px;  color:$black;}
-
-.medium {
-  display: none;
-}
-
+.material-icons.md-18 { font-size: 18px;  color: $black111;}
+.material-icons.md-24 { font-size: 24px;  color: $black111;}
+.material-icons.md-36 { font-size: 36px;  color: $black111;}
+.material-icons.md-48 { font-size: 48px;  color: $black111;}
 
 .maldonado-title-container {
   height:50px;
@@ -159,22 +148,16 @@ a:active {
   height:102px;
   text-align:center;
   margin:16px 0 0 0;
-  color:$black;
-}
-
-.maldonado-title a:link{
-  color: #000;
+  color: $black111;
   text-decoration:none;
 }
 
-.maldonado-title a:visited{
+.maldonado-title a:link, .maldonado-title a:visited{
   color: #000;
-  text-decoration:none;
 }
 
 .maldonado-title a:hover {
-  color: $dark-blue;
-  text-decoration:none;
+  color: $blue-dark;
 }
 
 .maldonado-title a:active {
@@ -196,7 +179,7 @@ a:active {
   font-size:1.2rem;
   text-align:center;
   //font-weight: bold;
-  color:$black;
+  color: $black111;
 }
 
 .office-title-container {
@@ -215,22 +198,16 @@ a:active {
   margin:0;
   margin-right:-50%;
   transform: translate(-50%, 0%);
-  color:$black;
+  color: $black111;
 }
 
-.office-title a:link{
+.office-title a:link, .office-title a:visited{
   color: #000;
-  text-decoration:none;
 }
 
-.office-title a:visited{
-  color: #000;
-  text-decoration:none;
-}
 
 .office-title-container a:hover {
-  color: $dark-blue;
-  text-decoration:none;
+  color: $blue-dark;
 }
 
 .office-title-container a:active {
@@ -246,7 +223,7 @@ a:active {
   text-align:center;
   margin-top: 5px;
   margin-bottom:2px;
-  color:$black;
+  color: $black111;
 }
 
 .spanish:hover {
@@ -341,7 +318,6 @@ a:active {
 
   .small-link a.active {
     color: #4F2107;
-    text-decoration:none;
   }
 
   .state-emblem {
@@ -364,19 +340,12 @@ a:active {
     display: none;
   }
 
-  a:link{
+  a:link, a:visited {
     color: $white;
-    text-decoration:none;
-  }
-
-  a:visited{
-    color: $white;
-    text-decoration:none;
   }
 
   a:hover {
     color: $hover;
-    text-decoration:none;
   }
 
   a:active {
@@ -413,18 +382,12 @@ a:active {
     font-family: Times, serif;
     font-size:1.05rem;
     line-height: 1.3rem;
-    color:$bright-blue;
+    color: $blue-bright;
     margin-top:2px;
   }
 
-  .medium-facebook a:link {
-    color: $bright-blue;
-    text-decoration: none;
-  }
-
-  .medium-facebook a:visited {
-    color: $bright-blue;
-    text-decoration: none;
+  .medium-facebook a:link, .medium-facebook a:visited {
+    color: $blue-bright;
   }
 
   .medium-facebook a:hover {
@@ -462,7 +425,7 @@ a:active {
 
   .medium-page-links {
     height:3.0rem;
-    background-color:$navigation-color;
+    background-color: $navigation-bar;
     width:100%;
     max-width:976px;
     position:relative;
@@ -491,17 +454,15 @@ a:active {
     margin-right:-50%;
     transform: translate(-50%, -50%);
     color: $white;
+    text-decoration:none;
   }
-
 
   .medium-link:visited{
     color: $white;
-    text-decoration:none;
   }
 
   .medium-link:hover {
     color: $hover;
-    text-decoration:none;
   }
 
   .medium-link:active {
