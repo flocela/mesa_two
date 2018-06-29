@@ -2,6 +2,10 @@ $dark-blue: #001F48;
 $background-blue: #929da1;
 $navigation-color:#36464e;
 
+.background-wrapper {
+  display:none;
+}
+
 .billboard-container {
   display:none;
 }
@@ -46,7 +50,6 @@ $navigation-color:#36464e;
   width:100%;
   max-width:976px;
   margin:0 auto;
-  background-color:rgba(76, 100, 113, 0.2);
 }
 
 @media (min-width: 576px) {
@@ -95,26 +98,34 @@ $navigation-color:#36464e;
     border: 1px solid #eee;
     padding: 30px 20px 50px 20px;
     width:90%;
+    background-color:rgba(76, 100, 113, 0.2);
   }
 
   .background-wrapper {
-    background-image: url("./../../assets/swishbackground.png");
-    background-repeat: no-repeat;
+    display:block;
     width:100%;
-    background-size:contain;
     position:absolute;
-    background-position:0px 0px;
+    z-index:-1;
+    top:0;
+  }
+
+  .swoosh-background {
+    width:100%;
   }
 }
 
 @media (min-width: 1800px) {
+  .swoosh-background {
+    display: none;
+  }
   .background-wrapper {
-    background-image:inherit;
-    margin: -30px auto 0 auto;
     width: 1200px;
     height: 1600px;
     background-color:#a0aaae;
-    position:relative;
-    padding-top:60px;
+    z-index:-1;
+    position:fixed;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0)
   }
 }

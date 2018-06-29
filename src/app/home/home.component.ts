@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
   texasDomeBckgrd = "url('https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/texas-dome-outside.jpg?" +
     "alt=media&token=ad4bd1cc-d97d-4611-85bf-e48c5417d250')";
+  swooshImg = "https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-28622.appspot.com/o/swishbackground.png?" +
+    "alt=media&token=424051cb-9648-4afc-9e6f-8ebd3f3bcd35";
 
   inSpanish = false;
 
