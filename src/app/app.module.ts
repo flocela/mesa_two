@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
@@ -37,7 +37,7 @@ const appRoutes: Routes = [
     )),
     BrowserModule
   ],
-  providers: [LanguageService],
+  providers: [LanguageService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

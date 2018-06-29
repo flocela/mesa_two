@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {LanguageService} from '../language.service';
 import {HeaderComponent} from '../header/header.component';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contacts',
@@ -54,11 +55,14 @@ export class ContactsComponent implements OnInit {
   telephone:       string;
   title:           string;
 
-  constructor (private langService: LanguageService) {
-    this.inSpanish = this.langService.getInSpanish();}
+  constructor (private langService: LanguageService,
+               private titleService: Title) {
+    }
 
   ngOnInit() {
+    this.inSpanish = this.langService.getInSpanish();
     this.initText();
+    this.titleService.setTitle("Lawyer Attorney Austin | Maldonado");
   }
 
   espanolPressed () {

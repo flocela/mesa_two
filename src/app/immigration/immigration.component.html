@@ -1,4 +1,4 @@
-<section class="background-wrapper">
+<section *ngIf="width >= 768" class="background-wrapper">
   <img class="swoosh-background"
        src="{{swooshImg}}"
        alt="swishbackground.png">
@@ -8,8 +8,7 @@
     {{width}}
   </section>
   <app-header (espanolPressedEmitter)="espanolPressed()"></app-header>
-
-  <section [ngStyle] = "{'background-image': texasDomeBckgrd}" class="billboard-container">
+  <section *ngIf="width >= 768" [ngStyle] = "{'background-image': texasDomeBckgrd}" class="billboard-container">
   </section>
   <section class="line-5px">
   </section>
@@ -17,7 +16,7 @@
     {{title}}
   </h2>
   <section class="intro-container">
-    <img class="individual-photo"
+    <img *ngIf="width >= 576" class="individual-photo"
          src="{{maldonadoImmigrationImg}}"
          alt="ricardo-dulce-state-bar-05.jpg">
     <span class="intro-large">{{immigration1}}</span>

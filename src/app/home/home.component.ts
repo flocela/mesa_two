@@ -2,6 +2,7 @@ import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import {HeaderComponent} from '../header/header.component';
 import {ActivatedRoute} from '@angular/router';
 import {LanguageService} from '../language.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -56,12 +57,13 @@ export class HomeComponent implements OnInit {
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
 
-  constructor(private langService: LanguageService){}
+  constructor(private langService: LanguageService, private titleService: Title){}
 
   ngOnInit() {
     this.width = window.innerWidth;
     this.inSpanish = this.langService.getInSpanish();
     this.initText();
+    this.titleService.setTitle("Criminal Attorney Austin | Maldonado");
   }
 
   @HostListener('window:resize', ['$event'])

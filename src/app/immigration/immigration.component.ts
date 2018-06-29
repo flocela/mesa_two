@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {LanguageService} from '../language.service';
 import {HeaderComponent} from '../header/header.component';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-immigration',
@@ -52,9 +53,11 @@ export class ImmigrationComponent implements OnInit {
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
 
-  constructor(private langService: LanguageService){}
+  constructor(private langService: LanguageService,
+              private titleService: Title){}
 
   ngOnInit() {
+    this.titleService.setTitle("Immigration Attorney Austin | Maldonado");
     this.width = window.innerWidth;
     this.inSpanish = this.langService.getInSpanish();
     this.initText();

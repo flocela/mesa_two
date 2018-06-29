@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {LanguageService} from '../language.service';
 import {HeaderComponent} from '../header/header.component';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dwi',
@@ -63,13 +64,15 @@ export class DWIComponent implements OnInit {
   dwi4: string;
   title: string;
 
-  constructor (private langService: LanguageService) {
+  constructor (private langService: LanguageService,
+               private titleService: Title) {
     }
 
   ngOnInit() {
     this.width = window.innerWidth;
     this.inSpanish = this.langService.getInSpanish();
     this.initText();
+    this.titleService.setTitle("DWI Criminal Attorney Austin | Maldonado");
   }
 
   @HostListener('window:resize', ['$event'])

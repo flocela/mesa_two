@@ -1,4 +1,4 @@
-<section class="background-wrapper">
+<section *ngIf="width >= 768" class="background-wrapper">
   <img class="swoosh-background"
        src="{{swooshImg}}"
        alt="swishbackground.png">
@@ -9,7 +9,7 @@
     </section>
     <app-header (espanolPressedEmitter)="espanolPressed()"></app-header>
 
-    <section  [ngStyle] = "{'background-image': austinNightUrl}" class="billboard-container">
+    <section *ngIf="width >= 768" [ngStyle] = "{'background-image': austinNightUrl}" class="billboard-container">
     </section>
     <section class="line-5px">
     </section>
@@ -17,7 +17,7 @@
       {{title}}
     </h2>
     <section class="intro-container">
-      <img class="individual-photo"
+      <img *ngIf="width >= 576" class="individual-photo"
            src={{maldonadoDWIUrl}}
            alt="maldonado_dwi.jpg">
       <span class="intro-large">{{dwi1}}</span>
