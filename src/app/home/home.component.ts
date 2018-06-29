@@ -32,21 +32,22 @@ export class HomeComponent implements OnInit {
               'My experience also extends to Divorce and CPS cases.';
   intro4Eng = 'I understand if you\'re worried about caring for your family or being separated ' +
     'from them. Securing your release or the release of your loved one is of upmost importance ' +
-    'to me';
-  intro5Eng ='Call us, my staff and I are here to help.';
+    'to me.';
+  intro5Eng ="I'm here to help you if there are criminal charges against you or a loved one.";
 
   intro1Spn = 'Por favor recuerde, ';
-  intro2Spn = 'no tiene que navegar solo por el sistema legal.' +
+  intro2Spn = 'no tiene que navegar solo por el sistema legal. ' +
               'Tengo más de 15 años de experiencia como abogado ' +
               'en Austin y puedo guiarlo a través de sus asuntos legales.';
   intro3Spn = 'He sido licenciado en la Corte Federal desde el 2007. He ' +
     'litigado casos de homicidio, casos de acoso sexual, DWI (manejar intoxicado), ' +
-    'casos de asalto, casos de violencia interfamiliar, casos de lesiones a menores, ' +
+    'casos de asalto, casos de violencia interfamiliar, casos de lesiones a menores, y ' +
     'casos de lesiones personales. Tambien tengo experiencia en Divorcios y CPS ' +
     '(Servicio de Proteccion a Menores).';
   intro4Spn = "Entiendo si está preocupado por su familia o su separación. " +
     "Asegurar su liberación o la liberación de alguien cercano a usted es lo más importante.";
-  intro5Spn = "Llámenos, mi oficina y yo estamos aquí para ayudar.";
+  intro5Spn = "Estoy aquí para ayudarle si existen cargos criminales en su contra o en " +
+    "contra de alguien cercano a usted.";
 
   intro1: string;
   intro2: string;

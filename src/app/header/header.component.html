@@ -11,8 +11,11 @@
       <section class="menu-text">
         Menu
       </section>
-      <section class="menu-icon">
+      <section *ngIf="!showingMenu" class="menu-icon">
         <i class="material-icons md-36" (click) = "showMenu()">keyboard_arrow_down</i>
+      </section>
+      <section *ngIf="showingMenu" class="menu-icon">
+        <i class="material-icons md-36" (click) = "showMenu()">keyboard_arrow_up</i>
       </section>
     </section>
     <section [ngClass]="{'transition':showingMenu}" [hidden]="!showingMenu" class="dropdown-content">

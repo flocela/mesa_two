@@ -24,7 +24,7 @@ export class ImmigrationComponent implements OnInit {
 
   immigration1Eng = 'I fully support immigrants in the United States. ';
   immigration2Eng = "America's diversity is a beacon to the rest of the world, that " +
-    "people can work together. It is in mixing our ideas that we have succeeded. ";
+    "people can work together. It is in the mixing of our ideas that we have succeeded. ";
   immigration3Eng = ' My law practice has shifted away from immigration and DACA ' +
     'applications. However, I am still here for legal advice concerning immigration and ' +
     'your legal status here in the United States.';
