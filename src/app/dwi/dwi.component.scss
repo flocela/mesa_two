@@ -3,6 +3,10 @@ $background-blue: #929da1;
 $navigation-color:#666;
 $black: #222;
 
+.background-wrapper {
+  display:none;
+}
+
 .billboard-container {
   display:none;
 }
@@ -131,23 +135,31 @@ $black: #222;
   }
 
   .background-wrapper {
-    background-image: url("./../../assets/swishbackground.png");
-    background-repeat: no-repeat;
+    display:block;
     width:100%;
-    background-size:contain;
     position:absolute;
+    z-index:-1;
+    top:0;
+  }
+
+  .swoosh-background {
+    width:100%;
   }
 }
 
 @media (min-width: 1800px) {
+  .swoosh-background {
+    display: none;
+  }
   .background-wrapper {
-    background-image:inherit;
-    margin: -30px auto 0 auto;
     width: 1200px;
     height: 1600px;
     background-color:#a0aaae;
-    position:relative;
-    padding-top:60px;
+    z-index:-1;
+    position:fixed;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0)
   }
 }
 

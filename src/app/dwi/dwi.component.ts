@@ -15,6 +15,9 @@ export class DWIComponent implements OnInit {
   maldonadoDWIUrl = "https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/maldonado_dwi.jpg?" +
     "alt=media&token=3d146323-1a2b-4e18-a007-f8005e20d723";
+  swooshImg = "https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-28622.appspot.com/o/swishbackground.png?" +
+    "alt=media&token=424051cb-9648-4afc-9e6f-8ebd3f3bcd35";
 
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;

@@ -15,6 +15,9 @@ export class ImmigrationComponent implements OnInit {
   texasDomeBckgrd = "url('https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/texas-dome-inside.jpg?" +
     "alt=media&token=9f87109e-3e4e-4ac1-a3ae-750459db4c01')";
+  swooshImg = "https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-28622.appspot.com/o/swishbackground.png?" +
+    "alt=media&token=424051cb-9648-4afc-9e6f-8ebd3f3bcd35";
 
   inSpanish = false;
 

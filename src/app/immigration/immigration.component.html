@@ -1,30 +1,33 @@
 <section class="background-wrapper">
-  <section class="page-wrapper">
-    <section style="position:absolute; z-index:5;">
-      {{width}}
-    </section>
-    <app-header (espanolPressedEmitter)="espanolPressed()"></app-header>
-
-    <section [ngStyle] = "{'background-image': texasDomeBckgrd}" class="billboard-container">
-    </section>
-    <section class="line-5px">
-    </section>
-    <h2 class="title">
-      {{title}}
-    </h2>
-    <section class="intro-container">
-      <img class="individual-photo"
-           src="{{maldonadoImmigrationImg}}"
-           alt="ricardo-dulce-state-bar-05.jpg">
-      <span class="intro-large">{{immigration1}}</span>
-      <span class="intro-norm">{{immigration2}}</span>
-      <br>
-      <br>
-      <span class="intro-norm">{{immigration3}}</span>
-      <br>
-
-    </section>
-    <section class="clearfix"></section>
-    <app-footer></app-footer>
+  <img class="swoosh-background"
+       src="{{swooshImg}}"
+       alt="swishbackground.png">
+</section>
+<section class="page-wrapper">
+  <section style="position:absolute; z-index:5;">
+    {{width}}
   </section>
+  <app-header (espanolPressedEmitter)="espanolPressed()"></app-header>
+
+  <section [ngStyle] = "{'background-image': texasDomeBckgrd}" class="billboard-container">
+  </section>
+  <section class="line-5px">
+  </section>
+  <h2 class="title">
+    {{title}}
+  </h2>
+  <section class="intro-container">
+    <img class="individual-photo"
+         src="{{maldonadoImmigrationImg}}"
+         alt="ricardo-dulce-state-bar-05.jpg">
+    <span class="intro-large">{{immigration1}}</span>
+    <span class="intro-norm">{{immigration2}}</span>
+    <br>
+    <br>
+    <span class="intro-norm">{{immigration3}}</span>
+    <br>
+
+  </section>
+  <section class="clearfix"></section>
+  <app-footer></app-footer>
 </section>

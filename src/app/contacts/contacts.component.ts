@@ -23,6 +23,9 @@ export class ContactsComponent implements OnInit {
   sanAntonioStImg = "url('https://firebasestorage.googleapis.com/v0/b/" +
     "maldonadoattorney-28622.appspot.com/o/san-antonio-st.jpg?" +
     "alt=media&token=ffa27626-1417-42a4-b24f-478f646d434d')";
+  swooshImg = "https://firebasestorage.googleapis.com/v0/b/" +
+    "maldonadoattorney-28622.appspot.com/o/swishbackground.png?" +
+    "alt=media&token=424051cb-9648-4afc-9e6f-8ebd3f3bcd35";
 
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
