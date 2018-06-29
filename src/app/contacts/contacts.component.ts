@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {LanguageService} from '../language.service';
 import {HeaderComponent} from '../header/header.component';
 import {Title} from '@angular/platform-browser';
@@ -31,6 +31,7 @@ export class ContactsComponent implements OnInit {
   @ViewChild(HeaderComponent)
   private headerComponent: HeaderComponent;
   inSpanish = false;
+  width: number;
 
   directions1Eng = "The entrance to the parking garage is on the 9th street side of our building."
   directions2Eng = "Please ask the receptionist for a reimbursement ticket.";
@@ -64,6 +65,11 @@ export class ContactsComponent implements OnInit {
     this.inSpanish = this.langService.getInSpanish();
     this.initText();
     this.titleService.setTitle("Lawyer Attorney Austin | Maldonado");
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.width = window.innerWidth;
   }
 
   espanolPressed () {
