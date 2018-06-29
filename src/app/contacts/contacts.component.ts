@@ -32,12 +32,12 @@ export class ContactsComponent implements OnInit {
   private headerComponent: HeaderComponent;
   inSpanish = false;
 
-  directionsEng = "The entrance to the parking garage is on the 9th street side of our building.\n" +
-    "Please ask the receptionist for a reimbursement ticket.";
-  directionsSpn = "La entrada al estacionamiento está al lado del edificio en la calle Novena.\n" +
-    "Por favor, pida a la recepcionista para reembolso.";
-  facebookEng   = "find us on ";
-  facebookSpn   = "encuéntranos en ";
+  directions1Eng = "The entrance to the parking garage is on the 9th street side of our building."
+  directions2Eng = "Please ask the receptionist for a reimbursement ticket.";
+  directions1Spn = "La entrada al estacionamiento está al lado del edificio en la calle Novena.";
+  directions2Spn = "Por favor, pida a la recepcionista para reembolso.";
+  facebookEng   = "Find us on ";
+  facebookSpn   = "Encuéntranos en ";
   googleMapsClickEng = "Go to google maps!";
   googleMapsClickSpn = "Ir a google maps!";
   telephoneEng  = "Telephone: 512-850-9005";
@@ -46,7 +46,8 @@ export class ContactsComponent implements OnInit {
   titleSpn = "Contáctanos y Direcciones";
 
   city             = "Austin, TX 78701";
-  directions:      string;
+  directions1:     string;
+  directions2:     string;
   email            = "ricardo@maldonadoattorney.com";
   facebookfind:    string;
   fax              = "Fax: 512-320-9923";
@@ -75,14 +76,16 @@ export class ContactsComponent implements OnInit {
 
   initText() {
     if (this.inSpanish) {
-      this.directions = this.directionsSpn;
+      this.directions1 = this.directions1Spn;
+      this.directions2 = this.directions2Spn;
       this.facebookfind = this.facebookSpn;
       this.googleMapsClick = this.googleMapsClickSpn;
       this.telephone = this.telephoneSpn;
       this.title = this.titleSpn;
     }
     else {
-      this.directions = this.directionsEng;
+      this.directions1 = this.directions1Eng;
+      this.directions2 = this.directions2Eng;
       this.facebookfind = this.facebookEng;
       this.googleMapsClick = this.googleMapsClickEng;
       this.telephone = this.telephoneEng;

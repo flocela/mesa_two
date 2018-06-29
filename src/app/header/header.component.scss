@@ -3,7 +3,8 @@ $background-hover:#bbb;
 $black111: #111;
 $blue-bright:#002E6B;
 $blue-dark: #001F48;
-$hover: #999;
+$hover-sm: #bbb;
+$hover-md: #999;
 $navigation-bar:#36464e;
 $white: #bbb;
 
@@ -24,7 +25,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  color: $hover;
+  color: $hover-sm;
 }
 
 a:active {
@@ -227,7 +228,7 @@ a:active {
 }
 
 .spanish:hover {
-  color: $hover;
+  color: $hover-sm;
 }
 
 .spanish:active {
@@ -345,7 +346,7 @@ a:active {
   }
 
   a:hover {
-    color: $hover;
+    color: $hover-md;
   }
 
   a:active {
@@ -392,14 +393,14 @@ a:active {
 
   .medium-facebook a:hover {
     background-color: $background-hover;
-    padding:6px;
+    padding:4px;
     border-radius: 4px;
   }
 
   .medium-facebook a:active {
     color: #E0CE5A;
     background-color: #eee;
-    padding:6px;
+    padding:4px;
     border-radius: 4px;
   }
 
@@ -462,7 +463,7 @@ a:active {
   }
 
   .medium-link:hover {
-    color: $hover;
+    color: $hover-md;
   }
 
   .medium-link:active {

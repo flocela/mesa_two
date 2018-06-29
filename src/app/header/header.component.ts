@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
 
   contactSpn = "Contáctanos/\nDirecciones";
   dwiSpn = "DWI/\nCriminal";
-  findUsSpn = "Encuéntranos en ";
+  findUsSpn = "encuéntranos en ";
   homeSpn = "Inicio";
   immigrationSpn = "Inmigración";
   lawOfficeSpn = "Oficina de Leyes de ";
@@ -49,7 +49,6 @@ export class HeaderComponent implements OnInit {
   immigration: string;
   lawOffice: string;
   spanishText: string;
-
 
   constructor(private langService: LanguageService){}
 
