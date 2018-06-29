@@ -5,12 +5,7 @@ $black: #111;
 $hover: #ccc;
 $bright-blue:#002E6B;
 
-a:link {
-  color: $bright-blue;
-  text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
   color: $bright-blue;
   text-decoration: none;
 }
@@ -27,10 +22,6 @@ a:active {
   background-color: #eee;
   padding:6px;
   border-radius: 4px;
-}
-
-.billboard-container {
-  display:none;
 }
 
 .garage-background {
@@ -59,9 +50,6 @@ a:active {
   text-align:center;
 }
 
-.clearfix {
-  clear:both;
-}
 
 .facebook {
   height:18px;
@@ -83,13 +71,6 @@ a:active {
   text-align: center;
 }
 
-.intro-container {
-  margin:0px 0px 0px 0px;
-  padding:20px 15px 0px 15px;
-  max-width:976px;
-  clear:both;
-}
-
 .text-norm {
   text-align:center;
   font-size:1.15rem;
@@ -97,109 +78,19 @@ a:active {
   line-height:1.5rem;
 }
 
-.line-5px {
-  display:none;
-}
-
-.page-wrapper {
-  width:100%;
-  max-width:976px;
-  margin:0 auto;
-}
-
-.title {
-  text-align:center;
-  font-size:1.45rem;
-  font-family: Times, serif;
-  letter-spacing: .11rem;
-  line-height:1.8rem;
-  font-weight:bold;
-  margin:0 auto;
-  padding: 12px;
-  border-bottom:2px solid $black;
-}
 
 @media (min-width: 576px) {
-  .title {
-    border-bottom:1px solid $black;
+  .contact-info {
+    width:50%;
   }
   .google-maps-info {
     text-align: left;
     margin-left:5px;
   }
-  .contact-info {
-    width:50%;
-  }
 }
 
 @media (min-width: 768px) {
-  .billboard-container {
-    display:block;
-    width:100%;
-    max-width:976px;
-    height:277px;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: 50% 50%;
-    margin-top:5px;
-  }
-
-
-
   .garage-background {
     border:1px solid #222;
-  }
-
-  .intro-container {
-    margin:0px 0px 0px 0px;
-    padding:20px 5px 0px 5px;
-    max-width:976px;
-    clear:both;
-  }
-
-  .line-5px {
-    display:block;
-    max-width:976px;
-    background-color:$dark-blue;
-    width: 100%;
-    height:5px;
-    margin-top:5px;
-    margin-right:0px;
-  }
-
-  .page-wrapper {
-    margin: 30px auto 30px auto;
-    border: 1px solid #eee;
-    padding: 30px 20px 50px 20px;
-    width:90%;
-    background-color:rgba(76, 100, 113, 0.2);
-  }
-
-  .background-wrapper {
-    display:block;
-    width:100%;
-    position:absolute;
-    z-index:-1;
-    top:0;
-  }
-
-  .swoosh-background {
-    width:100%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .swoosh-background {
-    display: none;
-  }
-  .background-wrapper {
-    width: 1200px;
-    height: 1600px;
-    background-color:#a0aaae;
-    z-index:-1;
-    position:fixed;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0)
   }
 }
