@@ -45,3 +45,4 @@ Thumbs.db
 
 **/environment.prod.ts
 **/environment.ts
+.firebaserc
